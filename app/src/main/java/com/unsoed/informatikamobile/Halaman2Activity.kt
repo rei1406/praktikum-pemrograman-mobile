@@ -53,13 +53,12 @@ class Halaman2Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.layoutEmail.root.setOnLongClickListener {
+        binding.layoutEmail.root.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
                 data = "mailto:${getString(R.string.email)}".toUri()
             }
 
             startActivity(intent)
-            true
         }
 
         binding.layoutPhone.root.setOnClickListener {
