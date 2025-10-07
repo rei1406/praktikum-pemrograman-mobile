@@ -72,41 +72,52 @@
                     android:textStyle="italic" />
 
             </com.google.android.material.card.MaterialCardView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@id/card_profil">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_profil"
+                tools:layout_editor_absoluteX="8dp">
+
                 <include
                     android:id="@+id/layout_phone"
                     layout="@layout/layout_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    />
+                    android:layout_marginTop="4dp" />
+
                 <include
                     android:id="@+id/layout_email"
                     layout="@layout/layout_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    />
+                    android:layout_marginTop="4dp" />
+
                 <include
                     android:id="@+id/layout_location"
                     layout="@layout/layout_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    />
+                    android:layout_marginTop="4dp" />
+
                 <include
                     android:id="@+id/layout_ig"
                     layout="@layout/layout_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
-                    />
+                    android:layout_marginBottom="4dp" />
+
+                <include
+                    android:id="@+id/layout_book"
+                    layout="@layout/layout_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
